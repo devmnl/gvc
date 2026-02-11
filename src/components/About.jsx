@@ -25,7 +25,9 @@ const About = () => {
               Moldando o Futuro com <span className="text-accent">Tradição e Fogo</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-400 mb-8 font-light leading-relaxed">
-              A GVC FUNDIÇÃO não apenas fabrica peças; nós forjamos soluções que mantêm a indústria em movimento. Especialistas em ligas de alta resistência para os ambientes mais severos do planeta.
+              Acompanhando o seguimento da antiga empresa que foi dada continuidade, hoje a GVC FUNDIÇÃO vem buscando o que há de mais novo e moderno para produção de suas peças. Demonstrando respeito aos seus clientes e fornecedores, é reconhecida nacionalmente pela qualidade de seus produtos, preços acessíveis e excelente atendimento, resultados estes garantidos pelos princípios de honestidade, responsabilidade e compromisso que norteiam a empresa.
+              <br /><br />
+              Dispomos de laboratório próprio para análise de nossos materiais. Atendemos a todo tipo de material dentro da NORMA ASTM.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -51,16 +53,37 @@ const About = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="lg:w-1/2 relative"
+            className="lg:w-1/2 relative flex justify-center"
           >
-            <div className="relative z-10 rounded-2xl overflow-hidden border-8 border-white/5 shadow-2xl">
-              <img 
-                src="/trabalhador.jpeg" 
-                alt="Colaborador GVC Fundição"
-                className="w-full grayscale hover:grayscale-0 transition-all duration-700 object-cover aspect-[4/5]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-deep-gray/80 to-transparent" />
+            <div className="relative z-10 w-full">
+              {/* Photo Frame Container */}
+              <div className="bg-white/5 p-4 rounded-xl border border-white/10 shadow-2xl backdrop-blur-sm relative group">
+                {/* Decorative corners */}
+                <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-accent/50 rounded-tl-xl" />
+                <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-accent/50 rounded-tr-xl" />
+                <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-accent/50 rounded-bl-xl" />
+                <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-accent/50 rounded-br-xl" />
+
+                <div className="relative rounded-lg overflow-hidden bg-black/50">
+                   <img 
+                    src="/gvcoldpic.png" 
+                    alt="GVC Fundição - Sede Histórica"
+                    className="w-full h-auto object-contain shadow-lg"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
+                  
+                  <div className="absolute bottom-0 left-0 w-full p-6">
+                    <div className="inline-block px-3 py-1 bg-accent text-white text-xs font-black uppercase tracking-widest mb-2 rounded-sm">
+                      Nossa História
+                    </div>
+                    <p className="text-white font-bold text-lg drop-shadow-md">
+                      Sede GVC Fundição
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            
             {/* Molten metal effect behind image */}
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-accent blur-[80px] opacity-30 animate-pulse" />
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-molten blur-[80px] opacity-20 animate-pulse" />

@@ -31,8 +31,9 @@ const Contact = () => {
                   <Phone className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
-                  <p className="text-[10px] font-black tracking-widest text-gray-500 uppercase mb-1">Telefone Direto</p>
-                  <p className="text-xl md:text-2xl font-bold text-white tracking-tight break-all">(19) 3585-6107</p>
+                  <p className="text-[10px] font-black tracking-widest text-gray-500 uppercase mb-1">Telefones</p>
+                  <p className="text-xl md:text-2xl font-bold text-white tracking-tight break-all">(11) 4693-3015</p>
+                  <p className="text-sm text-gray-400 mt-1">(11) 94776-2999 / (11) 94021-4359</p>
                 </div>
               </div>
 
@@ -42,7 +43,7 @@ const Contact = () => {
                 </div>
                 <div className="min-w-0">
                   <p className="text-[10px] font-black tracking-widest text-gray-500 uppercase mb-1">E-mail Comercial</p>
-                  <p className="text-lg md:text-2xl font-bold text-white tracking-tight break-words">comercial@gvcfundicao.com.br</p>
+                  <p className="text-lg md:text-2xl font-bold text-white tracking-tight break-words">gvc@gvcfundicao.com</p>
                 </div>
               </div>
 

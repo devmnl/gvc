@@ -5,28 +5,28 @@ import { Wrench, Layers, Cog, Zap, Anchor, Box } from 'lucide-react';
 const Services = () => {
   const services = [
     {
-      title: 'Reparo de Bombas de Draga',
-      description: 'Recuperação estrutural de carcaças e rotores com ligas de alta dureza para máxima vida útil.',
+      title: 'Reparos Tijolinhos',
+      description: '4 – 6 – 6x8 – 8 – 10 – 12". Composto de 5 tijolos, 2 tampas, 1 garganta, 1 boqueta.',
       icon: <Anchor className="w-10 h-10" />,
-      tag: 'ESPECIALIDADE'
+      tag: 'PRODUTOS'
     },
     {
-      title: 'Fundição sob Encomenda',
-      description: 'Peças complexas fundidas em ferro, aço e ligas especiais sob medida para sua necessidade.',
+      title: 'Caracol',
+      description: 'Disponível nos tamanhos 6 e 8 polegadas. Alta durabilidade e precisão.',
       icon: <Box className="w-10 h-10" />,
-      tag: 'PERSONALIZADO'
+      tag: 'PRODUTOS'
     },
     {
-      title: 'Usinagem Pesada',
-      description: 'Acabamento centesimal em peças de grande porte para garantir o ajuste perfeito.',
+      title: 'Caracol Descartável',
+      description: 'Disponível nos tamanhos 6 e 8 polegadas. Praticidade e eficiência.',
       icon: <Cog className="w-10 h-10" />,
-      tag: 'PRECISÃO'
+      tag: 'PRODUTOS'
     },
     {
-      title: 'Revestimento Duro',
-      description: 'Aplicação de camadas protetoras contra abrasão extrema em componentes de dragagem.',
+      title: 'Rotores',
+      description: 'Disponível nos tamanhos 4 – 6 – 6x8 – 8 – 10 polegadas. Balanceamento de precisão.',
       icon: <Zap className="w-10 h-10" />,
-      tag: 'PROTEÇÃO'
+      tag: 'PRODUTOS'
     }
   ];
 
@@ -39,7 +39,7 @@ const Services = () => {
               Serviços <span className="text-accent">Industriais</span> de Elite
             </h2>
             <p className="text-gray-500 text-lg font-light">
-              Tecnologia de ponta aplicada à metalurgia pesada. Transformamos desafios em componentes indestrutíveis.
+              Fabricamos todos os tipos de revestimento para bombas e ligas dentro da NORMA ASTM. Trabalhamos com peças sob encomenda destinadas a cada tipo de necessidade apresentada por nossos clientes. Somos especializados em extratoras de areia, atendendo em todo território nacional.
             </p>
           </div>
           <div className="hidden md:block">

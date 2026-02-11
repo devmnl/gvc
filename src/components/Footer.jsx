@@ -18,7 +18,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="max-w-md mb-8 text-gray-500 leading-relaxed">
-              Líder em soluções de fundição e reparos industriais. Especializados em bombas de draga e componentes de alta performance para mineração e dragagem.
+              A GVC FUNDIÇÃO é reconhecida nacionalmente pela qualidade de seus produtos, preços acessíveis e excelente atendimento. Atendemos a todo tipo de material dentro da NORMA ASTM.
             </p>
             <div className="flex gap-6">
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent hover:text-white transition-all"><Linkedin className="w-5 h-5" /></a>
