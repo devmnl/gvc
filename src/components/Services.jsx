@@ -57,7 +57,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-deep-gray p-10 group hover:bg-accent/10 transition-all duration-500 relative overflow-hidden"
+              className="bg-deep-gray p-6 md:p-10 group hover:bg-accent/10 transition-all duration-500 relative overflow-hidden"
             >
               {/* Molten hover effect */}
               <div className="absolute top-0 left-0 w-full h-1 bg-transparent group-hover:bg-accent transition-all duration-500" />

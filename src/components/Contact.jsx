@@ -19,40 +19,40 @@ const Contact = () => {
             className="lg:col-span-5"
           >
             <h2 className="text-3xl md:text-7xl font-black text-white tracking-tighter uppercase leading-none mb-8">
-              Fale com um <span className="text-accent">Especialista</span>
+              Fale com um <span className="text-accent block mt-2 md:inline md:mt-0">Especialista</span>
             </h2>
-            <p className="text-gray-400 text-lg mb-12 font-light">
+            <p className="text-gray-400 text-base md:text-lg mb-8 md:mb-12 font-light">
               Estamos prontos para transformar seu projeto em metal. Solicite análise técnica e orçamento.
             </p>
 
-            <div className="space-y-10">
-              <div className="group flex items-start gap-6">
-                <div className="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all duration-500">
-                  <Phone className="w-6 h-6" />
+            <div className="space-y-8 md:space-y-10">
+              <div className="group flex items-start gap-4 md:gap-6">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all duration-500 shrink-0">
+                  <Phone className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
                   <p className="text-[10px] font-black tracking-widest text-gray-500 uppercase mb-1">Telefone Direto</p>
-                  <p className="text-2xl font-bold text-white tracking-tight">(19) 3585-6107</p>
+                  <p className="text-xl md:text-2xl font-bold text-white tracking-tight break-all">(19) 3585-6107</p>
                 </div>
               </div>
 
-              <div className="group flex items-start gap-6">
-                <div className="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all duration-500">
-                  <Mail className="w-6 h-6" />
+              <div className="group flex items-start gap-4 md:gap-6">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all duration-500 shrink-0">
+                  <Mail className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[10px] font-black tracking-widest text-gray-500 uppercase mb-1">E-mail Comercial</p>
-                  <p className="text-2xl font-bold text-white tracking-tight">comercial@gvcfundicao.com.br</p>
+                  <p className="text-lg md:text-2xl font-bold text-white tracking-tight break-words">comercial@gvcfundicao.com.br</p>
                 </div>
               </div>
 
-              <div className="group flex items-start gap-6">
-                <div className="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all duration-500">
-                  <MapPin className="w-6 h-6" />
+              <div className="group flex items-start gap-4 md:gap-6">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-white/5 border border-white/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all duration-500 shrink-0">
+                  <MapPin className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="flex-1">
                   <p className="text-[10px] font-black tracking-widest text-gray-500 uppercase mb-1">Unidade Industrial</p>
-                  <p className="text-lg font-bold text-white tracking-tight mb-2 leading-tight">
+                  <p className="text-base md:text-lg font-bold text-white tracking-tight mb-2 leading-tight">
                     Av. Dr. José Ferreira de Azambuja, 1010 - Porto Ferreira - SP
                   </p>
                   <a 

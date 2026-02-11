@@ -21,10 +21,10 @@ const About = () => {
               <HardHat className="w-4 h-4" />
               <span>DESDE 1995</span>
             </div>
-            <h2 className="text-3xl md:text-6xl font-black text-white mb-8 tracking-tighter uppercase leading-none">
+            <h2 className="text-3xl md:text-6xl font-black text-white mb-6 md:mb-8 tracking-tighter uppercase leading-none">
               Moldando o Futuro com <span className="text-accent">Tradição e Fogo</span>
             </h2>
-            <p className="text-xl text-gray-400 mb-8 font-light leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-400 mb-8 font-light leading-relaxed">
               A GVC FUNDIÇÃO não apenas fabrica peças; nós forjamos soluções que mantêm a indústria em movimento. Especialistas em ligas de alta resistência para os ambientes mais severos do planeta.
             </p>
             

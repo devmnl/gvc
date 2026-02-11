@@ -73,7 +73,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="inicio" className="relative h-screen w-full bg-deep-gray overflow-hidden">
+    <section id="inicio" className="relative min-h-[100dvh] w-full bg-deep-gray overflow-hidden">
       {/* Background Sparks */}
       {sparks.map(spark => (
         <Spark key={spark.id} style={spark.style} />
@@ -103,22 +103,23 @@ const Hero = () => {
                 Seu navegador não suporta vídeos.
               </video>
               <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
-              <div className="relative container mx-auto px-6 h-full flex flex-col justify-center items-center text-center">
+              <div className="relative container mx-auto px-4 md:px-6 h-full flex flex-col justify-center items-center text-center">
                 <motion.div
                   initial={{ y: 50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
+                  className="w-full max-w-[90%]"
                 >
-                  <span className="text-accent font-black tracking-[0.4em] uppercase text-sm mb-6 block">
+                  <span className="text-accent font-black tracking-[0.2em] md:tracking-[0.4em] uppercase text-xs md:text-sm mb-4 md:mb-6 block">
                     {slides[current].subtitle}
                   </span>
-                  <h1 className="text-4xl md:text-9xl font-black text-white tracking-tighter mb-8 leading-[0.9] md:leading-[0.8] uppercase">
+                  <h1 className="text-3xl sm:text-4xl md:text-9xl font-black text-white tracking-tighter mb-6 md:mb-8 leading-[1.1] md:leading-[0.8] uppercase break-words">
                     {slides[current].title}
                   </h1>
-                  <p className="text-gray-300 text-lg md:text-2xl mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed">
+                  <p className="text-gray-300 text-base md:text-2xl mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed px-4">
                     {slides[current].description}
                   </p>
-                  <a href="#contato" className="inline-block px-8 py-4 md:px-12 md:py-6 bg-accent text-white font-black uppercase tracking-widest hover:bg-molten transition-all shadow-[0_0_30px_rgba(249,115,22,0.4)] text-xs md:text-base">
+                  <a href="#contato" className="inline-block px-6 py-4 md:px-12 md:py-6 bg-accent text-white font-black uppercase tracking-widest hover:bg-molten transition-all shadow-[0_0_30px_rgba(249,115,22,0.4)] text-[10px] md:text-base w-full sm:w-auto max-w-xs">
                     Conheça Nossa Fábrica
                   </a>
                 </motion.div>
@@ -127,12 +128,12 @@ const Hero = () => {
           ) : slides[current].type === 'brand' ? (
             <div className="absolute inset-0 bg-industrial-gradient flex items-center justify-center">
               <div className="absolute inset-0 smoke-overlay opacity-30" />
-              <div className="container mx-auto px-6 flex flex-col items-center">
+              <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
                 <motion.div
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 1, delay: 0.2 }}
-                  className="mb-8 w-full max-w-[300px] md:max-w-[600px]"
+                  className="mb-8 w-full max-w-[280px] md:max-w-[600px]"
                 >
                   <img 
                     src="/logogvc.png" 
@@ -144,9 +145,9 @@ const Hero = () => {
                   initial={{ y: 30, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
-                  className="text-center"
+                  className="text-center w-full px-4"
                 >
-                  <p className="text-gray-400 text-lg md:text-2xl max-w-2xl mx-auto uppercase tracking-[0.2em] font-black leading-relaxed">
+                  <p className="text-gray-400 text-base md:text-2xl max-w-2xl mx-auto uppercase tracking-[0.15em] md:tracking-[0.2em] font-black leading-relaxed">
                     {slides[current].description}
                   </p>
                 </motion.div>
@@ -160,27 +161,27 @@ const Hero = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-deep-gray via-deep-gray/80 to-transparent" />
               
-              <div className="relative container mx-auto px-6 h-full flex flex-col justify-center">
+              <div className="relative container mx-auto px-4 md:px-6 h-full flex flex-col justify-center">
                 <motion.div
                   initial={{ x: -100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.5 }}
-                  className="max-w-3xl"
+                  className="max-w-3xl w-full"
                 >
-                  <span className="text-accent font-black tracking-[0.3em] uppercase text-sm mb-4 block">
+                  <span className="text-accent font-black tracking-[0.2em] md:tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block">
                     {slides[current].subtitle}
                   </span>
-                  <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter mb-8 leading-[0.9]">
+                  <h1 className="text-4xl sm:text-5xl md:text-8xl font-black text-white tracking-tighter mb-6 md:mb-8 leading-[1.1] md:leading-[0.9] break-words">
                     {slides[current].title}
                   </h1>
-                  <p className="text-gray-300 text-xl md:text-2xl mb-10 leading-relaxed max-w-xl">
+                  <p className="text-gray-300 text-lg md:text-2xl mb-8 md:mb-10 leading-relaxed max-w-xl pr-4">
                     {slides[current].description}
                   </p>
-                  <div className="flex gap-4">
-                    <a href="#contato" className="px-10 py-5 bg-accent text-white font-black uppercase tracking-widest hover:bg-molten transition-all">
+                  <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                    <a href="#contato" className="px-6 py-4 md:px-10 md:py-5 bg-accent text-white font-black uppercase tracking-widest hover:bg-molten transition-all text-center text-xs md:text-base">
                       Falar com Especialista
                     </a>
-                    <a href="#servicos" className="px-10 py-5 border border-white/20 text-white font-black uppercase tracking-widest hover:bg-white/10 transition-all">
+                    <a href="#servicos" className="px-6 py-4 md:px-10 md:py-5 border border-white/20 text-white font-black uppercase tracking-widest hover:bg-white/10 transition-all text-center text-xs md:text-base">
                       Ver Catálogo
                     </a>
                   </div>
