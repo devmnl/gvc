@@ -112,13 +112,13 @@ const Hero = () => {
                   <span className="text-accent font-black tracking-[0.4em] uppercase text-sm mb-6 block">
                     {slides[current].subtitle}
                   </span>
-                  <h1 className="text-6xl md:text-9xl font-black text-white tracking-tighter mb-8 leading-[0.8] uppercase">
+                  <h1 className="text-4xl md:text-9xl font-black text-white tracking-tighter mb-8 leading-[0.9] md:leading-[0.8] uppercase">
                     {slides[current].title}
                   </h1>
-                  <p className="text-gray-300 text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed">
+                  <p className="text-gray-300 text-lg md:text-2xl mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed">
                     {slides[current].description}
                   </p>
-                  <a href="#contato" className="inline-block px-12 py-6 bg-accent text-white font-black uppercase tracking-widest hover:bg-molten transition-all shadow-[0_0_30px_rgba(249,115,22,0.4)]">
+                  <a href="#contato" className="inline-block px-8 py-4 md:px-12 md:py-6 bg-accent text-white font-black uppercase tracking-widest hover:bg-molten transition-all shadow-[0_0_30px_rgba(249,115,22,0.4)] text-xs md:text-base">
                     Conheça Nossa Fábrica
                   </a>
                 </motion.div>

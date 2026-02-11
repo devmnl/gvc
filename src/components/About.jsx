@@ -4,12 +4,12 @@ import { Shield, Target, Users, HardHat } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="sobre" className="py-24 bg-deep-gray relative overflow-hidden">
+    <section id="sobre" className="py-16 md:py-24 bg-deep-gray relative overflow-hidden">
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-accent/5 -skew-x-12 translate-x-1/4" />
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
+        <div className="flex flex-col lg:flex-row gap-8 md:gap-16 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -21,7 +21,7 @@ const About = () => {
               <HardHat className="w-4 h-4" />
               <span>DESDE 1995</span>
             </div>
-            <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter uppercase leading-none">
+            <h2 className="text-3xl md:text-6xl font-black text-white mb-8 tracking-tighter uppercase leading-none">
               Moldando o Futuro com <span className="text-accent">Tradição e Fogo</span>
             </h2>
             <p className="text-xl text-gray-400 mb-8 font-light leading-relaxed">

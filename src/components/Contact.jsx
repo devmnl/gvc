@@ -7,9 +7,9 @@ const Contact = () => {
   const googleMapsLink = "https://maps.app.goo.gl/i2VMRK7TK3pZiuMS9";
 
   return (
-    <section id="contato" className="py-24 bg-deep-gray overflow-hidden">
+    <section id="contato" className="py-16 md:py-24 bg-deep-gray overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid lg:grid-cols-12 gap-16 items-start">
+        <div className="grid lg:grid-cols-12 gap-10 md:gap-16 items-start">
           
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -18,7 +18,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="lg:col-span-5"
           >
-            <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase leading-none mb-8">
+            <h2 className="text-3xl md:text-7xl font-black text-white tracking-tighter uppercase leading-none mb-8">
               Fale com um <span className="text-accent">Especialista</span>
             </h2>
             <p className="text-gray-400 text-lg mb-12 font-light">

@@ -31,11 +31,11 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-24 bg-[#0a0f1d] relative">
+    <section id="servicos" className="py-16 md:py-24 bg-[#0a0f1d] relative">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-20 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-4xl md:text-7xl font-black text-white tracking-tighter uppercase leading-none mb-6">
+            <h2 className="text-3xl md:text-7xl font-black text-white tracking-tighter uppercase leading-none mb-6">
               Serviços <span className="text-accent">Industriais</span> de Elite
             </h2>
             <p className="text-gray-500 text-lg font-light">
