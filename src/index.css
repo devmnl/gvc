@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a1a1a;
+  --color-secondary: #333333;
+  --color-accent: #f97316; /* Orange-500 for fire/molten metal */
+  --color-molten: #fbbf24; /* Amber-400 for glowing metal */
+  --color-industrial-gray: #4b5563;
+  --color-deep-gray: #0f172a;
+}
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0f172a;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-deep-gray text-gray-200 overflow-x-hidden;
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 12s linear infinite;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(249, 115, 22, 0.5), 0 0 20px rgba(249, 115, 22, 0.3);
+  }
+  
+  .bg-molten-gradient {
+    background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
+  }
+
+  .bg-industrial-gradient {
+    background: radial-gradient(circle at center, #334155 0%, #0f172a 100%);
+  }
+
+  .smoke-overlay {
+    background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.05) 0%, transparent 50%);
+    filter: blur(40px);
+  }
+}
+
+  .border-molten {
+    border-color: rgba(249, 115, 22, 0.4);
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+  }
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Custom scrollbar for industrial look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}
