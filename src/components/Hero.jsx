@@ -193,16 +193,16 @@ const Hero = () => {
       </AnimatePresence>
 
       {/* Navigation Controls */}
-      <div className="absolute bottom-12 right-12 flex gap-4 z-40">
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-4 z-40">
         <button 
           onClick={() => setCurrent((prev) => (prev - 1 + slides.length) % slides.length)}
-          className="p-4 border border-white/10 text-white hover:bg-white hover:text-black transition-all"
+          className="p-4 border border-white/10 text-white hover:bg-white hover:text-black transition-all rounded-full"
         >
           <ChevronLeft />
         </button>
         <button 
           onClick={() => setCurrent((prev) => (prev + 1) % slides.length)}
-          className="p-4 bg-white text-black hover:bg-accent hover:text-white transition-all"
+          className="p-4 bg-white text-black hover:bg-accent hover:text-white transition-all rounded-full"
         >
           <ChevronRight />
         </button>

@@ -30,10 +30,11 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-black mb-8 uppercase tracking-[0.2em] text-xs">Navegação</h4>
             <ul className="space-y-4 text-sm">
-              <li><a href="#inicio" className="hover:text-accent transition-colors">Início</a></li>
-              <li><a href="#sobre" className="hover:text-accent transition-colors">Sobre Nós</a></li>
-              <li><a href="#servicos" className="hover:text-accent transition-colors">Serviços</a></li>
-              <li><a href="#contato" className="hover:text-accent transition-colors">Contato</a></li>
+              <li><a href="/#inicio" className="hover:text-accent transition-colors">Início</a></li>
+              <li><a href="/#sobre" className="hover:text-accent transition-colors">Sobre Nós</a></li>
+              <li><a href="/#servicos" className="hover:text-accent transition-colors">Serviços</a></li>
+              <li><a href="/#contato" className="hover:text-accent transition-colors">Contato</a></li>
+              <li><a href="/trabalhe-conosco" className="hover:text-accent transition-colors text-accent">Trabalhe Conosco</a></li>
             </ul>
           </div>
 

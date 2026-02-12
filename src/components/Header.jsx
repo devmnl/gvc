@@ -25,10 +25,11 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const navLinks = [
-    { name: 'Início', href: '#inicio' },
-    { name: 'Sobre Nós', href: '#sobre' },
-    { name: 'Serviços', href: '#servicos' },
-    { name: 'Contato', href: '#contato' },
+    { name: 'Início', href: '/#inicio' },
+    { name: 'Sobre Nós', href: '/#sobre' },
+    { name: 'Serviços', href: '/#servicos' },
+    { name: 'Trabalhe Conosco', href: '/trabalhe-conosco' },
+    { name: 'Contato', href: '/#contato' },
   ];
 
   const menuVariants = {
@@ -60,7 +61,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-deep-gray/90 backdrop-blur-xl py-2 border-b border-white/5' : 'bg-transparent py-4'}`}>
+    <header className={`fixed w-full z-[60] transition-all duration-500 ${isScrolled && !isMenuOpen ? 'bg-deep-gray/90 backdrop-blur-xl py-2 border-b border-white/5' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center relative z-50">
           <a href="#inicio" className="group flex items-center">
