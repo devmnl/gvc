@@ -3,8 +3,8 @@ import { Mail, Phone, MapPin, Send, ExternalLink, MessageSquare } from 'lucide-r
 import { motion } from 'framer-motion';
 
 const Contact = () => {
-  const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.242475454641!2d-47.4586221!3d-21.925232!2m3!1f0!2f0!3f0!3m2!1i1024!2i2000!4f13.1!3m3!1m2!1s0x94b803273841961f%3A0xb15f03d21b476485!2sGVC%20Fundi%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1707669000000!5m2!1spt-BR!2sbr";
-  const googleMapsLink = "https://maps.app.goo.gl/i2VMRK7TK3pZiuMS9";
+  const mapUrl = "https://maps.google.com/maps?q=Estrada%20Municipal%20J%C3%AClio%20Ler%C3%A1rio%2C%20273%20-%20Industrial%20I%2C%20Guararema%20-%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed";
+  const googleMapsLink = "https://www.google.com/maps/search/?api=1&query=Estrada+Municipal+Júlio+Lerário,+273+-+Industrial+I,+Guararema+-+SP";
 
   return (
     <section id="contato" className="py-16 md:py-24 bg-deep-gray overflow-hidden">
@@ -54,7 +54,7 @@ const Contact = () => {
                 <div className="flex-1">
                   <p className="text-[10px] font-black tracking-widest text-gray-500 uppercase mb-1">Unidade Industrial</p>
                   <p className="text-base md:text-lg font-bold text-white tracking-tight mb-2 leading-tight">
-                    Av. Dr. José Ferreira de Azambuja, 1010 - Porto Ferreira - SP
+                    Estrada Municipal Júlio, Av. Francisca Lerário, 273 - Industrial I, Guararema - SP, 08900-000
                   </p>
                   <a 
                     href={googleMapsLink} 
@@ -133,7 +133,7 @@ const Contact = () => {
                 src={mapUrl}
                 width="100%"
                 height="100%"
-                style={{ border: 0, filter: 'grayscale(1) contrast(1.2) invert(0.9)' }}
+                style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

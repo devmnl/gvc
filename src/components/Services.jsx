@@ -1,31 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Wrench, Layers, Cog, Zap, Anchor, Box } from 'lucide-react';
+import { Wrench } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       title: 'Reparos Tijolinhos',
       description: '4 – 6 – 6x8 – 8 – 10 – 12". Composto de 5 tijolos, 2 tampas, 1 garganta, 1 boqueta.',
-      icon: <Anchor className="w-10 h-10" />,
+      image: '/conjuntotijolinho.png',
       tag: 'PRODUTOS'
     },
     {
       title: 'Caracol',
       description: 'Disponível nos tamanhos 6 e 8 polegadas. Alta durabilidade e precisão.',
-      icon: <Box className="w-10 h-10" />,
+      image: '/caracol.png',
       tag: 'PRODUTOS'
     },
     {
       title: 'Caracol Descartável',
       description: 'Disponível nos tamanhos 6 e 8 polegadas. Praticidade e eficiência.',
-      icon: <Cog className="w-10 h-10" />,
+      image: '/caracol1.png',
       tag: 'PRODUTOS'
     },
     {
       title: 'Rotores',
       description: 'Disponível nos tamanhos 4 – 6 – 6x8 – 8 – 10 polegadas. Balanceamento de precisão.',
-      icon: <Zap className="w-10 h-10" />,
+      image: '/rotor.png',
       tag: 'PRODUTOS'
     }
   ];
@@ -57,27 +57,35 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-deep-gray p-6 md:p-10 group hover:bg-accent/10 transition-all duration-500 relative overflow-hidden"
+              className="bg-deep-gray p-6 md:p-10 group hover:bg-accent/10 transition-all duration-500 relative overflow-hidden flex flex-col h-full"
             >
               {/* Molten hover effect */}
               <div className="absolute top-0 left-0 w-full h-1 bg-transparent group-hover:bg-accent transition-all duration-500" />
               
-              <div className="text-accent mb-8 group-hover:scale-110 transition-transform duration-500 inline-block">
-                {service.icon}
+              <div className="mb-8 group-hover:scale-105 transition-transform duration-500 h-48 flex items-center justify-center bg-white/5 rounded-lg p-4">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-contain drop-shadow-2xl"
+                />
               </div>
+              
               <span className="block text-[10px] font-black tracking-[0.2em] text-gray-500 mb-4 group-hover:text-accent">
                 {service.tag}
               </span>
               <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-tight leading-tight">
                 {service.title}
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed group-hover:text-gray-300 transition-colors">
+              <p className="text-gray-500 text-sm leading-relaxed group-hover:text-gray-300 transition-colors mb-8 flex-grow">
                 {service.description}
               </p>
               
-              <div className="mt-8 flex items-center gap-2 text-white/20 group-hover:text-accent font-black text-xs tracking-widest uppercase transition-colors">
+              <a 
+                href="#contato" 
+                className="flex items-center gap-2 text-white/20 group-hover:text-accent font-black text-xs tracking-widest uppercase transition-colors mt-auto cursor-pointer"
+              >
                 Saiba Mais <Wrench className="w-3 h-3" />
-              </div>
+              </a>
             </motion.div>
           ))}
         </div>

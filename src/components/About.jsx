@@ -19,7 +19,7 @@ const About = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-bold mb-6">
               <HardHat className="w-4 h-4" />
-              <span>DESDE 1995</span>
+              <span>DESDE 1991</span>
             </div>
             <h2 className="text-3xl md:text-6xl font-black text-white mb-6 md:mb-8 tracking-tighter uppercase leading-none">
               Moldando o Futuro com <span className="text-accent">Tradição e Fogo</span>
