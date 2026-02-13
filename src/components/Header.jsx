@@ -65,7 +65,7 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center relative z-50">
           <a href="#inicio" className="group flex items-center">
-            <div className="relative w-36 h-18 md:w-40 md:h-20 flex items-center justify-center">
+            <div className="relative w-28 h-14 md:w-40 md:h-20 flex items-center justify-center">
               <img 
                 src="/gvc-logo-main.png" 
                 alt="GVC Logo" 

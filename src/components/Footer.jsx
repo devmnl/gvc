@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 md:gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <div className="mb-8 flex items-center group">
-              <div className="relative w-40 h-20 md:w-56 md:h-28 flex items-center justify-center">
+              <div className="relative w-32 h-16 md:w-56 md:h-28 flex items-center justify-center">
                 <img 
                   src="/gvc-logo-main.png" 
                   alt="GVC Logo" 
