@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="mb-8 flex items-center group">
               <div className="relative w-40 h-20 md:w-56 md:h-28 flex items-center justify-center">
                 <img 
-                  src="/logogvc.png" 
+                  src="/gvc-logo-main.png" 
                   alt="GVC Logo" 
                   className="w-full h-full object-contain"
                 />

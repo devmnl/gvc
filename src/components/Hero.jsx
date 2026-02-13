@@ -136,7 +136,7 @@ const Hero = () => {
                   className="mb-8 w-full max-w-[280px] md:max-w-[600px]"
                 >
                   <img 
-                    src="/logogvc.png" 
+                    src="/gvc-logo-main.png" 
                     alt="GVC Logo" 
                     className="w-full h-auto drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]"
                   />

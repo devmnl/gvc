@@ -67,7 +67,7 @@ const Header = () => {
           <a href="#inicio" className="group flex items-center">
             <div className="relative w-36 h-18 md:w-40 md:h-20 flex items-center justify-center">
               <img 
-                src="/logogvc.png" 
+                src="/gvc-logo-main.png" 
                 alt="GVC Logo" 
                 className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
