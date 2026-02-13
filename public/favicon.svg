@@ -1,0 +1,55 @@
+<svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ladleMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#475569" />
+      <stop offset="30%" stopColor="#94a3b8" />
+      <stop offset="50%" stopColor="#cbd5e1" />
+      <stop offset="70%" stopColor="#94a3b8" />
+      <stop offset="100%" stopColor="#1e293b" />
+    </linearGradient>
+    <linearGradient id="moltenFlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#fbbf24" />
+      <stop offset="50%" stopColor="#f97316" />
+      <stop offset="100%" stopColor="#ea580c" />
+    </linearGradient>
+    <filter id="metallicShine">
+      <feGaussianBlur stdDeviation="1" result="blur" />
+      <feSpecularLighting in="blur" surfaceScale="5" specularConstant="1" specularExponent="20" lightingColor="#ffffff" result="specular">
+        <fePointLight x="-50" y="-50" z="100" />
+      </feSpecularLighting>
+      <feComposite in="specular" in2="SourceGraphic" operator="in" />
+    </filter>
+    <filter id="moltenGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Pouring Metal -->
+  <path
+    d="M110 135C110 135 115 170 130 190C145 210 165 215 165 215"
+    stroke="url(#moltenFlow)"
+    stroke-width="24"
+    stroke-linecap="round"
+    filter="url(#moltenGlow)"
+  />
+
+  <!-- Ladle Group -->
+  <g transform="rotate(-15 180 80)">
+    <rect x="135" y="40" width="12" height="100" rx="6" fill="url(#ladleMetal)" filter="url(#metallicShine)" />
+    <rect x="175" y="40" width="12" height="100" rx="6" fill="url(#ladleMetal)" filter="url(#metallicShine)" />
+    <path
+      d="M80 100C80 85 95 75 120 75H190C215 75 230 85 230 100V150C230 180 210 200 180 200H130C100 200 80 180 80 150V100Z"
+      fill="url(#ladleMetal)"
+      filter="url(#metallicShine)"
+      stroke="#1e293b"
+      stroke-width="1"
+    />
+    <ellipse cx="155" cy="85" rx="75" ry="15" fill="#334155" stroke="#94a3b8" stroke-width="2" />
+    <path
+      d="M95 110C95 110 100 140 120 140H190C210 140 215 110 215 110"
+      fill="url(#moltenFlow)"
+      filter="url(#moltenGlow)"
+    />
+  </g>
+</svg>
