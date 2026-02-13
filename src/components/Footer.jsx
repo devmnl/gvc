@@ -42,12 +42,12 @@ const Footer = () => {
             <h4 className="text-white font-black mb-8 uppercase tracking-[0.2em] text-xs">Atendimento</h4>
             <ul className="space-y-4 text-sm">
               <li className="flex flex-col">
-                <span className="text-white font-bold">Segunda - Sexta</span>
+                <span className="text-white font-bold">Segunda - Quinta</span>
                 <span className="text-gray-500">07:00 - 17:00</span>
               </li>
               <li className="flex flex-col">
-                <span className="text-white font-bold">Sábado</span>
-                <span className="text-gray-500">08:00 - 12:00</span>
+                <span className="text-white font-bold">Sexta</span>
+                <span className="text-gray-500">07:00 - 16:00</span>
               </li>
             </ul>
           </div>
