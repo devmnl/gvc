@@ -46,7 +46,7 @@ const WorkWithUs = () => {
       {/* Minimal Header */}
       <header className="fixed top-0 left-0 w-full p-6 z-50 flex justify-between items-center bg-deep-gray/90 backdrop-blur-md border-b border-white/5">
         <a href="/" className="w-24 md:w-32 opacity-80 hover:opacity-100 transition-opacity">
-          <img src="/logogvc.png" alt="GVC Logo" className="w-full" />
+          <img src="/gvc-logo-main.png" alt="GVC Logo" className="w-full" />
         </a>
         <a 
           href="/" 

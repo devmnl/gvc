@@ -56,9 +56,18 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-widest">
           <p>© {new Date().getFullYear()} GVC FUNDIÇÃO. Todos os direitos reservados.</p>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition-colors">Privacidade</a>
-            <a href="#" className="hover:text-white transition-colors">Termos</a>
+            
           </div>
+        </div>
+        <div className="mt-6 text-center">
+          <a
+            href="https://devmnl.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-accent transition-colors text-xs font-black uppercase tracking-[0.2em]"
+          >
+            DevmnL
+          </a>
         </div>
       </div>
     </footer>
